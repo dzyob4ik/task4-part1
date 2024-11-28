@@ -14,8 +14,7 @@ def text_hello():
 def get_info():
    
     return {
-        "app_name": "NIST CVE API Fetcher",
-        "version": "1.0.0",
+        "app_name": "NIST CVE finder",
         "Creator": "Taras Dzoban",
 
     }
