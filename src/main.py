@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-import getnew, getall, getcritical
+import getnew, getall, getcritical, search
 import json 
 app=FastAPI(
     title="NIST CVE API",
@@ -23,3 +23,4 @@ def get_info():
 app.include_router(getnew.router)
 app.include_router(getall.router)
 app.include_router(getcritical.router)
+app.include_router(search.router)
