@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-import getnew, getall, getcritical, search
-import json 
+import getnew, getall, getknown, search
+
 app=FastAPI(
     title="NIST CVE API",
     description="FastAPI додаток для отримання інформації про CVE з NIST"
@@ -21,5 +21,5 @@ def get_info():
    
 app.include_router(getnew.router)
 app.include_router(getall.router)
-app.include_router(getcritical.router)
+app.include_router(getknown.router)
 app.include_router(search.router)
